@@ -1,0 +1,232 @@
+.App {
+  background: #E5E5E5;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  padding: 20px 18px;
+  box-sizing: border-box;
+  display: flex;
+
+  .default-charts {
+    width: 100%;
+    height: 100%;
+    background-color: #F7FAFD;
+  }
+
+  .list_left {
+    margin-right: 21px;
+  }
+
+  .list_block {
+    width: 360px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 20px 32px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 22px;
+
+      .title_text {
+        font-family: '.PingFang SC';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+
+    .values {
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+      margin-bottom: 8px;
+
+      .label {
+        height: 24px;
+        font-family: 'PingFang SC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: #020508;
+        margin-right: 12px;
+        min-width: 90px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .value {
+        height: 24px;
+        font-family: 'PingFang SC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: #273949;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .handle_log {
+    height: 36px;
+    background: #10171F;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list_right {
+    background: #FFFFFF;
+    border-radius: 2px 0px 0px 2px;
+    flex: 2;
+    padding: 30px;
+    box-sizing: border-box;
+
+    .tool_btn {
+      text-align: right;
+      margin-bottom: 22px;
+    }
+
+    .chart_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .chart_left {
+        margin-right: 22px;
+      }
+
+      .chart_list {
+
+        .chart_title {
+          font-family: '.PingFang SC';
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          color: #324558;
+        }
+
+        .chart_desc {
+          display: flex;
+          align-items: center;
+          margin-bottom: 13px;
+
+          .desc_left {
+            .desc_list {
+              display: flex;
+              align-items: center;
+
+              .desc_label,
+              .desc_value {
+                font-family: 'PingFang SC';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                color: #697886;
+                min-width: 40px;
+              }
+            }
+          }
+
+          .chart_switch {
+            flex: 2;
+            text-align: right;
+          }
+        }
+
+      }
+
+    }
+
+    .line {
+      background-color: #D5DEE7;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      height: 1px;
+    }
+
+    .camera_box {
+      .camera_btn_tool {
+        margin-bottom: 20px;
+      }
+
+      .camera_title {
+        font-family: '.PingFang SC';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        color: #324558;
+        margin-bottom: 14px;
+      }
+
+      .camera_desc {
+        font-family: '.PingFang SC';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: #324558;
+        margin-bottom: 14px;
+      }
+
+      .camera_info {
+        height: 40px;
+        background: #F7FAFD;
+        border-radius: 4px;
+        padding: 9px 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: 12px;
+
+        .item1 {
+          margin-right: 20px;
+        }
+
+        .item2 {
+          width: 35px;
+          height: 22px;
+          background: rgba(0, 129, 204, 0.15);
+          border-radius: 10px;
+          margin-right: 20px;
+          color: #0081CC;
+          text-align: center;
+        }
+
+        .item3,
+        .item4 {
+          margin-right: 20px;
+          color: #324558;
+        }
+
+      }
+    }
+
+    .tip {
+      height: 40px;
+      background: rgba(0, 129, 204, 0.1);
+      border: 1px solid #0081CC;
+      box-sizing: border-box;
+      border-radius: 4px;
+      color: #0081CC;
+      font-family: 'PingFang SC';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+}

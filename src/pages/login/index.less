@@ -1,0 +1,193 @@
+.test{
+    color: var(--primary-color);
+}
+
+// 登陆页面
+.login_container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../../assets/img/login_bg.png");
+    background-size: 633px 516px;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 300px) 50%;
+    transition: all 0.5s ease 0s;
+  
+    .login_content {
+      //   position: absolute;
+      //   width: 1110px;
+      //   left: 0;
+      //   top: 0;
+      //   right: 0;
+      //   bottom: 0;
+      //   margin: auto;
+      //   height: 516px;
+      //   display: flex;
+      //   .login_bg{
+      //     flex-shrink: 0;
+      //     width: 633px;
+      //     height: 100%
+      //   }
+  
+      .form_container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(75%, -50%);
+        width: 360px;
+        min-width: 300Px;
+        min-height: 300Px;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 40px 34px;
+        box-shadow: 0 2px 20px 0 rgb(203 205 221 / 50%);
+  
+        .title {
+          text-align: center;
+          padding-bottom: 24px;
+  
+          .login_logo {
+            width: 160px;
+            height: 50px;
+          }
+        }
+  
+        .login_input {
+  
+          &.ant-input-affix-wrapper-focused,
+          &.ant-input-affix-wrapper:focus {
+            box-shadow: none;
+          }
+  
+          border-bottom: 1Px solid #cfcfcf;
+          border-radius: 0;
+  
+          input {
+            padding-left: 5px;
+  
+          }
+  
+        }
+  
+        .ant-form-item-has-error {
+          .login_input {
+            border-bottom: 1Px solid #ff4d4f;
+          }
+        }
+  
+        .login_form_button {
+          transition: all 0.2s linear;
+          width: 100%;
+          height: 40px;
+          margin-top: 10px;
+        }
+  
+  
+        .nc_container {
+          position: relative;
+  
+          .sm-pop-inner {
+            top: 0;
+            left: 0;
+          }
+  
+          #nc {
+  
+            .nc-container,
+            #nc_1_wrapper {
+              width: 100% !important;
+              margin: 5px 0 10px 0;
+              
+            }
+            .nc_scale{
+              @media (max-width: 1450px) {
+                height:28Px
+              }
+              span{
+                @media (max-width: 1450px) {
+                  height:28Px;
+                  line-height: 28Px;
+                }
+              }
+              .scale_text{
+                @media (max-width: 1450px) {
+                  line-height: 28Px;
+                }
+              }
+            }
+          }
+        }
+  
+      }
+    }
+  
+    .find_back_pwd {
+      float: right;
+    }
+  }
+  
+  
+  // 忘记密码
+  .forget_pwd_draw {
+    .get_code {
+      color: #FF6C1D;
+      border: 1px solid #FF6B1C;
+      padding: 5px 6px 5px 10px;
+      text-align: center;
+      font-size: 14;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .forget_pwd_btn{
+      width: 100%;
+      height: 40px;
+    }
+    .margin{
+      margin-bottom: 0;
+    }
+    .image{
+      width: 100%;
+      height: 100%;
+      .ant-image{
+        width: 100%;
+        height: 100%;
+      }
+      .img{
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        background-color: #ccc;
+      }
+    }
+    .require{
+      label{
+        &::before{
+          display: inline-block;
+          margin-right: .25rem;
+          color: #ff4d4f;
+          font-size: .875rem;
+          font-family: SimSun,sans-serif;
+          line-height: 1;
+          content: "*";
+        }
+      }
+    }
+    .nc_container {
+      position: relative;
+  
+      .sm-pop-inner {
+        top: 0;
+        left: 0;
+      }
+  
+      #ncc {
+        .nc_wrapper{
+          width: 100% !important;
+  
+        }
+      }
+    }
+  }

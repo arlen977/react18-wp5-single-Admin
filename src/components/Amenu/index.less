@@ -1,0 +1,25 @@
+.menu_content {
+    height: calc(100vh - 100px);
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 0 !important
+    }
+
+    -ms-overflow-style: none;
+
+    .ant-menu-item:nth-child(1) {
+        margin-top: 0;
+    }
+
+
+    // 展開卡頓
+    .ant-motion-collapse-enter,
+    .ant-motion-collapse-leave {
+        transition: all 0.3s ease-out !important;
+    }
+
+
+}

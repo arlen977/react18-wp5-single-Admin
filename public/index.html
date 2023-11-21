@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>page1</title>
+    <% htmlWebpackPlugin.options.cdnConfig.forEach(function(item){ if(item.css){ %>
+        <link href="<%= item.css %>" rel="stylesheet" />
+    <% }}) %>
+    <script src="./env.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <% htmlWebpackPlugin.options.cdnConfig.forEach(function(item){ if(item.js && !htmlWebpackPlugin.options.onlyCss){ %>
+        <script type="text/javascript" src="<%= item.js %>"></script>
+    <% }}) %>
+</body>
+
+</html>

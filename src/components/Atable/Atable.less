@@ -1,0 +1,53 @@
+.table_resize_box{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: red;
+    opacity: 0;
+    z-index: -1;
+}
+.list_table{
+
+    .ant-table-sticky-scroll{
+        display: none !important;
+    }
+    .ant-table-title{
+        padding: 0 !important;
+        // position: sticky;
+        top: 0;
+        z-index: 3;
+        background-color: #fff;
+    }
+    .table_title_setting{
+        .ck_box{
+            width: 150px;
+            padding-bottom: 4px;
+        }
+    }
+    .table_title{
+        padding:10px 0px 12px 0px;
+        .common-page-title{
+            margin: 0;
+        }
+       
+    }
+    .common-tabel-operation{
+        button{
+            margin-right: 10px;
+            &:last-child{
+                margin-left: 0;
+            }
+            &:nth-child(1){
+                margin-left: 10px;
+            }
+        }
+    }
+    .ant-table-body{
+        &::-webkit-scrollbar{
+            height: 8Px;
+            width: 8Px;
+        }
+    }
+}

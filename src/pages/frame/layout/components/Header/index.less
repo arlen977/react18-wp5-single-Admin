@@ -1,0 +1,80 @@
+.header {
+    background: #001529;
+    padding: 0 24px 0 24px;
+    height: 55px;
+    box-shadow: 0px 2px 4px 0px rgba(208, 208, 208, 0.5);
+    color: #fff;
+    .header_row,
+    .header_menu {
+        height: 100%;
+        overflow: hidden;
+    }
+    .header_col {
+        height: 100%;
+    }
+
+    .header_menu {
+        // padding-top: 8px;
+        display: flex;
+        justify-content: flex-end;
+        .header_menu_item {
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s linear;
+            &:hover {
+                color:var(--primary-color);
+            }
+            .notice_container {
+                padding-right: 15px;
+            }
+            .header_menu_icon {
+                font-size: 16px;
+                margin-right: 8px;
+            }
+            .header_menu_avatar {
+                position: relative;
+                top: -2px;
+            }
+        }
+    }
+
+    .welcome_text {
+        font-size: 17px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #fff;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .welcome_name {
+            font-weight: 600;
+        }
+    }
+
+    .avatar_container {
+        cursor: pointer;
+
+        .avatar_image {
+            color: #fff;
+        }
+
+        .avatar_icon {
+            font-size: 13px;
+            margin: 0 5px 0 5px;
+        }
+    }
+
+    .tool_list {
+        display: inline-block;
+    }
+}
+
+.user_drop {
+    .ant-dropdown-menu-item {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
